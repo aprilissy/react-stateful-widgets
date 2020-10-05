@@ -33,9 +33,6 @@ export default function Squares() {
     // as the argument matches the active square in state, empty string otherwise.
     // Right-click and "inspect element" on the square to see its effect.
 
-    //let element = document.getElementById(id)
-    //return id === activeSquare ? element.classList.add('active') : element.classList.add('')
-    console.log(id)
     return id === activeSquare ? 'active' : ''
   };
 
@@ -45,10 +42,6 @@ export default function Squares() {
     // (unless it already is, in which case we should reset
     // the currently active square id back to initial state).
 
-
-    // console.log(activeSquare)
-    // let element = document.getElementById(id)
-    // element.classList.add('active')
     return id !== activeSquare ? setActiveSquare(id) : setActiveSquare('')
   };
 
